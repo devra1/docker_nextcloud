@@ -52,8 +52,8 @@ services:
     image: nextcloud:stable 
     container_name: nextcloud
     volumes:
-      - ${DOCKER_REMOTE}/nextlocal/app:/var/www/html
-      - ${DOCKER_REMOTE}/nextlocal/data:/var/www/html/data
+      - ${DOCKER_REMOTE}/nextcloud/app:/var/www/html
+      - ${DOCKER_REMOTE}/nextcloud/data:/var/www/html/data
     networks:
       - t2_proxy
       - default
